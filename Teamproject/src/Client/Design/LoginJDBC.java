@@ -19,7 +19,7 @@ public class LoginJDBC extends JFrame {
 
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver"); // JDBC 드라이버 로딩
-			con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:ORCLOSY", "scott", "tiger"); // DB연결
+			con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:ORCL", "scott", "tiger"); // DB연결
 			stmt = con.createStatement(); // Connection 인스턴스를 이용해서 Statement 객체 생성
 			System.out.println("DB 접속 완료!");
 
